@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevBoard</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+</head>
+
+<body class="bg-gray-100 poppins">
+    <header class="max-w-screen-2xl mx-auto">
+        <nav class="bg-white flex justify-between items-center py-4 px-6 rounded-2xl">
+            <div class="flex items-center gap-2">
+                <img src="./assets/logo.png" alt="">
+                <h3 class="text-primary text-4xl font-light">Dev<span
+                        class="text-primary font-bold text-4xl">Board</span></h3>
+            </div>
+            <div class="flex gap-9">
+                <div class="flex gap-2 items-center primary-bg rounded-3xl p-3">
+                    <img src="./assets/checkbox.png" alt="">
+                    <p class="font-bold text-3xl">23</p>
+                </div>
+                <div class="primary-bg rounded-full p-3">
+                    <img src="./assets/theme-btn.png" alt="">
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <main class=" max-w-screen-2xl mx-auto bg-red-800">
+        <section class="grid grid-cols-4 gap-6 mt-5">
+            <div class=" col-span-3 bg-white ">
+                <!-- task assigned start -->
+                <div class="grid grid-cols-4 p-6 gap-6">
+                    <!-- Task assigned card 1 -->
+                    <div class="col-span-1  primary-bg rounded-xl">
+                        <div class="flex items-center gap-5 py-8 pl-8">
+                            <div class="bg-white p-4 rounded-full">
+                                <img src="./assets/checkbox.png" alt="">
+                            </div>
+                            <div>
+                                <p class="text-primary text-base font-medium">Task Assigned</p>
+                                <p class="text-primary font-bold text-3xl">05</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Task assigned card 2 -->
+                    <div class="col-span-2  bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] rounded-xl">
+                        <div class="flex items-center gap-5 py-8 pl-8">
+                            <div>
+                                <img src="./assets/board.png" alt="">
+                            </div>
+                            <div>
+                                <p class=" text-2xl font-medium text-white">Discover Something</p>
+                                <p class=" text-2xl font-medium text-white">New Today!</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Task assigned card 3 -->
+                    <div class="col-span-1  primary-bg rounded-xl">
+                        <div class="flex items-center gap-5 py-8 pl-8">
+                            <div class="bg-white p-4 rounded-full">
+                                <img src="./assets/calender.png" alt="">
+                            </div>
+                            <div>
+                                <p class="text-primary text-base font-medium">Task Assigned</p>
+                                <p class="text-primary font-bold text-3xl">05</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div
+                    class="h-1 bg-gradient-to-r from-transparent via-gray-300 to-transparent bg-repeat-x bg-[0_0] bg-[length:16px_1px]">
+                </div>
+
+
+                <!-- Cards container -->
+                <div class="grid grid-cols-3 gap-9 p-6">
+                    <!-- Card -->
+                    <div class="primary-bg col-span-1 rounded-2xl">
+                        <p>ShopEase</p>
+                        <h3>Fix Mobile Button Issue</h3>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+            <div class="col-span-1 bg-stone-500 ">
+
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
