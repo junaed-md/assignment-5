@@ -12,29 +12,30 @@
 
 </head>
 
-<body class="primary-bg poppins">
-    <header class="max-w-screen-2xl mx-auto">
-        <div class="min-h-3 primary-bg"></div>
-        <nav class="bg-white flex justify-between items-center py-4 px-6 rounded-2xl">
-            <div class="flex items-center gap-2">
-                <img src="./assets/logo.png" alt="">
-                <h3 class="text-primary text-4xl font-light">Dev<span
-                        class="text-primary font-bold text-4xl">Board</span></h3>
-            </div>
-            <div class="flex gap-9">
-                <div class="flex gap-2 items-center primary-bg rounded-3xl p-3">
-                    <img src="./assets/checkbox.png" alt="">
-                    <p class="font-bold text-3xl">23</p>
+<body id="body" class="primary-bg poppins">
+    <header class="max-w-screen-2xl mx-auto pt-4">
+        <!-- <div class="min-h-3 primary-bg"></div> -->
+            <nav class="bg-white flex justify-between items-center py-4 px-6 rounded-2xl">
+                <div class="flex items-center gap-2">
+                    <img src="./assets/logo.png" alt="">
+                    <h3 class="text-primary text-4xl font-light">Dev<span
+                            class="text-primary font-bold text-4xl">Board</span></h3>
                 </div>
-                <div class="primary-bg rounded-full p-3">
-                    <img src="./assets/theme-btn.png" alt="">
+                <div class="flex gap-9">
+                    <div class="flex gap-2 items-center primary-bg rounded-3xl p-3">
+                        <img src="./assets/checkbox.png" alt="">
+                        <p id="total-task" class="font-bold text-3xl">23</p>
+                    </div>
+                    <div class="primary-bg rounded-full p-3">
+                        <img id="color" class="cursor-pointer" src="./assets/theme-btn.png" alt="">
+                    </div>
                 </div>
-            </div>
 
-        </nav>
+            </nav>
+
     </header>
 
-    <main class=" max-w-screen-2xl mx-auto primary-bg">
+    <main class=" max-w-screen-2xl mx-auto">
         <section class="grid grid-cols-4 gap-6 mt-5">
             <div class=" col-span-3 bg-white rounded-2xl">
                 <!-- task assigned start -->
@@ -47,7 +48,7 @@
                             </div>
                             <div>
                                 <p class="text-primary text-base font-medium">Task Assigned</p>
-                                <p class="text-primary font-bold text-3xl">05</p>
+                                <p id="task" class="text-primary font-bold text-3xl">06</p>
                             </div>
                         </div>
                     </div>
@@ -61,20 +62,20 @@
                                 <div>
                                     <p class=" text-2xl font-medium text-white">Discover Something</p>
                                     <p class=" text-2xl font-medium text-white">New Today!</p>
-    
+
                                 </div>
                             </div>
-                          </a>
+                        </a>
                     </div>
                     <!-- Task assigned card 3 -->
-                    <div class="col-span-1  primary-bg rounded-xl">
+                    <div class="col-span-1 primary-bg rounded-xl">
                         <div class="flex items-center gap-5 py-8 pl-8">
                             <div class="bg-white p-4 rounded-full">
                                 <img src="./assets/calender.png" alt="">
                             </div>
                             <div>
-                                <p class="text-primary text-base font-medium">Task Assigned</p>
-                                <p class="text-primary font-bold text-3xl">05</p>
+                                <p id="currentDay" class="text-primary text-base font-medium"></p>
+                                <p id="currentDate" class="text-primary font-bold text-xl"></p>
                             </div>
                         </div>
                     </div>
@@ -91,7 +92,7 @@
                     <div class="primary-bg col-span-1 rounded-2xl">
                         <div class="p-6">
                             <p class="bg-white inline-block py-2 px-4 rounded-lg text-primary">ShopEase</p>
-                            <h3 class="text-primary text-2xl py-4 font-medium">Fix Mobile Button Issue</h3>
+                            <h3 id="title1" class="text-primary text-2xl py-4 font-medium">Fix Mobile Button Issue</h3>
                             <div class="bg-white max-h-24 overflow-hidden rounded-lg">
                                 <p class="p-5 whitespace-nowrap overflow-hidden text-ellipsis text-black/50">
                                     Debug using Chrome <br> DevTools, check for overlapping elements, and ensure
@@ -109,7 +110,7 @@
                                         <p class="text-primary font-medium">21 March 2025</p>
                                     </div>
                                     <div class="primary-btn flex items-center rounded-lg">
-                                        <button
+                                        <button id="btn1"
                                             class="text-white font-medium py-3 px-5 cursor-pointer">Completed</button>
                                     </div>
                                 </div>
@@ -122,7 +123,7 @@
                     <div class="primary-bg col-span-1 rounded-2xl">
                         <div class="p-6">
                             <p class="bg-white inline-block py-2 px-4 rounded-lg text-primary">CloudSync</p>
-                            <h3 class="text-primary text-2xl py-4 font-medium">Add Dark Mode</h3>
+                            <h3 id="title2" class="text-primary text-2xl py-4 font-medium">Add Dark Mode</h3>
                             <div class="bg-white max-h-24 overflow-hidden rounded-lg">
                                 <p class="p-5 whitespace-nowrap overflow-hidden text-ellipsis text-black/50">Store the
                                     user's preference in <br>localStorage, update CSS variables dynamically, and apply a
@@ -140,7 +141,7 @@
                                         <p class="text-primary font-medium">21 March 2025</p>
                                     </div>
                                     <div class="primary-btn flex items-center rounded-lg">
-                                        <button
+                                        <button id="btn2"
                                             class="text-white font-medium py-3 px-5 cursor-pointer">Completed</button>
                                     </div>
                                 </div>
@@ -153,7 +154,7 @@
                     <div class="primary-bg col-span-1 rounded-2xl">
                         <div class="p-6">
                             <p class="bg-white inline-block py-2 px-4 rounded-lg text-primary">SwiftPay</p>
-                            <h3 class="text-primary text-2xl py-4 font-medium">Optimize Home page</h3>
+                            <h3 id="title3" class="text-primary text-2xl py-4 font-medium">Optimize Home page</h3>
                             <div class="bg-white max-h-24 overflow-hidden rounded-lg">
                                 <p class="p-5 whitespace-nowrap overflow-hidden text-ellipsis text-black/50">
                                     Debug using Chrome <br> DevTools, check for overlapping elements, and ensure
@@ -171,7 +172,7 @@
                                         <p class="text-primary font-medium">21 March 2025</p>
                                     </div>
                                     <div class="primary-btn flex items-center rounded-lg">
-                                        <button
+                                        <button id="btn3"
                                             class="text-white font-medium py-3 px-5 cursor-pointer">Completed</button>
                                     </div>
                                 </div>
@@ -184,7 +185,7 @@
                     <div class="primary-bg col-span-1 rounded-2xl">
                         <div class="p-6">
                             <p class="bg-white inline-block py-2 px-4 rounded-lg text-primary">Meta</p>
-                            <h3 class="text-primary text-2xl py-4 font-medium">Add new emoji 🤲</h3>
+                            <h3 id="title4" class="text-primary text-2xl py-4 font-medium">Add new emoji 🤲</h3>
                             <div class="bg-white max-h-24 overflow-hidden rounded-lg">
                                 <p class="p-5 whitespace-nowrap overflow-hidden text-ellipsis text-black/50">
                                     Debug using Chrome <br> DevTools, check for overlapping elements, and ensure
@@ -202,7 +203,7 @@
                                         <p class="text-primary font-medium">21 March 2025</p>
                                     </div>
                                     <div class="primary-btn flex items-center rounded-lg">
-                                        <button
+                                        <button id="btn4"
                                             class="text-white font-medium py-3 px-5 cursor-pointer">Completed</button>
                                     </div>
                                 </div>
@@ -215,7 +216,7 @@
                     <div class="primary-bg col-span-1 rounded-2xl">
                         <div class="p-6">
                             <p class="bg-white inline-block py-2 px-4 rounded-lg text-primary">Google LLC</p>
-                            <h3 class="text-primary text-2xl py-4 font-medium">Integrate OpenAI API </h3>
+                            <h3 id="title5" class="text-primary text-2xl py-4 font-medium">Integrate OpenAI API </h3>
                             <div class="bg-white max-h-24 overflow-hidden rounded-lg">
                                 <p class="p-5 whitespace-nowrap overflow-hidden text-ellipsis text-black/50">
                                     Debug using Chrome <br> DevTools, check for overlapping elements, and ensure
@@ -233,7 +234,7 @@
                                         <p class="text-primary font-medium">21 March 2025</p>
                                     </div>
                                     <div class="primary-btn flex items-center rounded-lg">
-                                        <button
+                                        <button id="btn5"
                                             class="text-white font-medium py-3 px-5 cursor-pointer">Completed</button>
                                     </div>
                                 </div>
@@ -246,7 +247,7 @@
                     <div class="primary-bg col-span-1 rounded-2xl">
                         <div class="p-6">
                             <p class="bg-white inline-block py-2 px-4 rounded-lg text-primary">Glassdoar</p>
-                            <h3 class="text-primary text-2xl py-4 font-medium">Improve Job searching </h3>
+                            <h3 id="title6" class="text-primary text-2xl py-4 font-medium">Improve Job searching </h3>
                             <div class="bg-white max-h-24 overflow-hidden rounded-lg">
                                 <p class="p-5 whitespace-nowrap overflow-hidden text-ellipsis text-black/50">
                                     Debug using Chrome <br> DevTools, check for overlapping elements, and ensure
@@ -264,7 +265,7 @@
                                         <p class="text-primary font-medium">21 March 2025</p>
                                     </div>
                                     <div class="primary-btn flex items-center rounded-lg">
-                                        <button
+                                        <button id="btn6"
                                             class="text-white font-medium py-3 px-5 cursor-pointer">Completed</button>
                                     </div>
                                 </div>
@@ -286,19 +287,25 @@
                     <h4 class="text-primary font-medium text-xl">Activity Log</h4>
                 </div>
                 <div class=" flex justify-center mt-4">
-                    <button class="rounded-lg primary-btn text-white font-medium py-3 px-5 cursor-pointer ">Clear
+                    <button id="clear-btn"
+                        class="rounded-lg primary-btn text-white font-medium py-3 px-5 cursor-pointer ">Clear
                         History</button>
                 </div>
                 <div
-                    class="h-1 bg-gradient-to-r from-transparent via-gray-300 to-transparent bg-repeat-x bg-[0_0] bg-[length:16px_1px] my-4">
+                    class="h-1 bg-gradient-to-r from-transparent via-gray-300 to-transparent bg-repeat-x bg-[0_0] bg-[length:16px_1px] mt-4 mb-5">
+                </div>
+                <!-- History panel -->
+                <div id="history-panel" class="ml-2">
                 </div>
 
             </div>
-            <div class="min-h-7 primary-bg">
+            <div class="min-h-7">
 
             </div>
         </section>
     </main>
+    <script src="./script/utilities.js"></script>
+    <script src="./script/button.js"></script>
 </body>
 
 </html>
